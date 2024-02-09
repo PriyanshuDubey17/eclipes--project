@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent{
+height: 22rem;
+width: 22rem;
+background-color: #ffbb5c;
+border: 0.2rem solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 4px 4px 3px 5px black;
+animation: skychange 10s ease infinite;
+
+
+}
+@keyframes skychange{
+   0% {background-color: #ffbb5cb5;
+
+    }
+    25% {background-color: #fcbf47;
+
+    }
+    50% {background-color: #000;
+
+    }
+    75% {background-color: #fcbf49;
+
+    }
+    100% {background-color: #ffbb5cb5;
+
+    }
+}
+
+
+
+.child-1{
+    background-color: #e25e3e;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.child-2{
+    background-color: rgb(11, 16, 16);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moonwalk 10s ease-in-out infinite;
+}
+@keyframes moonwalk {
+    0%{
+        translate: 100%;
+        scale:1;
+    }
+     50%{
+        translate: 0%;
+        scale:0.9;
+    }
+    100%{
+        translate: -100%;
+        scale:0.9;
+    }
+
+}
